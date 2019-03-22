@@ -32,22 +32,22 @@ public class Solution2 {
     }
 
     private static void mergeSort(int[] array) {
-        int len = array.length;
+        int length = array.length;
         int n = 1;
         int shift;
-        int two_size;
-        int[] arr2;
-        while (n < len) {
+        int size2;
+        int[] array2;
+        while (n < length) {
             shift = 0;
-            while (shift < len) {
-                if (shift + n >= len) {
+            while (shift < length) {
+                if (shift + n >= length) {
                     break;
                 }
-                two_size = (shift + n * 2 > len) ? (len - (shift + n)) : n;
-                arr2 = merge(Arrays.copyOfRange(array, shift, shift + n),
-                        Arrays.copyOfRange(array, shift + n, shift + n + two_size));
-                if (n + two_size >= 0) {
-                    System.arraycopy(arr2, 0, array, shift, n + two_size);
+                size2 = (shift + n * 2 > length) ? (length - (shift + n)) : n;
+                array2 = merge(Arrays.copyOfRange(array, shift, shift + n),
+                        Arrays.copyOfRange(array, shift + n, shift + n + size2));
+                if (n + size2 >= 0) {
+                    System.arraycopy(array2, 0, array, shift, n + size2);
                 }
                 shift += n * 2;
             }
