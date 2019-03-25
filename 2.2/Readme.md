@@ -1,0 +1,1 @@
+## Count number of inverses in a sequence
