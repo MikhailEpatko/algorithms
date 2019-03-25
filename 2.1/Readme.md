@@ -1,17 +1,15 @@
-##Сортировка слиянием
+## Merge sorting
 
-Имя входного файла:	input.txt
+Input file name:	input.txt
 
-Имя выходного файла:	output.txt
+Output file name:	output.txt
 
-Ограничение по времени:	2 секунды
+Work time limit:	2 seconds
 
-Ограничение по памяти:	256 мегабайт
+RAM limit:	        256 MB
 
-Дан массив целых чисел. Задача — отсортировать его в порядке неубывания с помощью сортировки слиянием.
+Task:               to sort an array in non-decreasing order.
 
-Формат входного файла
-В первой строке входного файла содержится число 1 <= n <= 10^5 - число элементов в массиве. Во второй строке находятся n целых чисел, по модулю не превосходящих 10^9.
+Input file format:  first line contains a digit (n) in range 1 <= n <= 10^5 - it's array length. Next line contains n integers that do not exceed 10^9 in absolute value.
 
-Формат выходного файла
-В выходном файле требуется вывести отсортированный в порядке неубывания массив, данный на входе. Между любыми двумя числами должен стоять ровно один пробел.
+Output file format: contains sorted array. There is a spaces between digits.
